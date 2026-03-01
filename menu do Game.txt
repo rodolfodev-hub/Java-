@@ -1,0 +1,46 @@
+// menu de  jogo  
+
+import java.util.Scanner;
+
+class  Main{
+    
+    public static void  main(String [] args){
+        Scanner obj =new Scanner(System.in);
+        System.out.println("escolha uma opcao:1-3");
+        int esco  = obj.nextInt();
+       obj.nextLine(); //limpa o  buffer
+        switch(esco){
+            case 1:
+                
+                System.out.println("Iniciando o GAME");
+                System.out.println("Digite o  nome  do JOGADOR:");
+               String nome = obj.nextLine();
+               System.out.println("bem-vindo:"+nome);
+               
+                  break;
+                  
+                  case 2:
+                      
+                      System.out.println("opcoes de IDIOMAS");
+                      break;
+                      
+                      case 3:
+                          
+                         System.out.println("opcoes de AUDIO"); 
+                             break;
+                             
+                             default:
+                             System.out.println("opcao Inválida TENTE NOVAMENTE");
+                             break;
+            
+            
+        }
+        
+       
+        
+          
+                
+    }
+    
+    
+}
