@@ -1,0 +1,28 @@
+class  Animal{
+    
+    void som(){
+        
+        System.out.println("Animais fazem sons");
+    }
+}
+
+class Cat extends Animal{
+    @Override
+    void som(){
+      super.som();   // chama om  da superclasse
+      System.out.println("Gatos miam");
+        
+    }
+    
+}
+
+class Main{
+   public static void main(String []  args) {
+       
+       Cat obj = new Cat();
+       obj.som();
+       
+   }
+    
+    
+}
